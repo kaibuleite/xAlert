@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'xAlert_Example' do
+  pod 'xAlert', :path => '../'
+
+  target 'xAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
