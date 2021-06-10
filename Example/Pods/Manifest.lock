@@ -1,0 +1,27 @@
+PODS:
+  - xAlert (1.0.0):
+    - xDefine
+    - xExtension
+  - xDefine (1.0.1)
+  - xExtension (1.0.1)
+
+DEPENDENCIES:
+  - xAlert (from `../`)
+
+SPEC REPOS:
+  https://github.com/kaibuleite/xSpecs.git:
+    - xDefine
+    - xExtension
+
+EXTERNAL SOURCES:
+  xAlert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  xAlert: b4267aec1ed13d19c2954fe2b3e29e682833a948
+  xDefine: c49ba60b96d8a940028dfe98d9016c93894739d9
+  xExtension: 3112075f98d10de63b99fbab7a7a800deac95793
+
+PODFILE CHECKSUM: 2fa27f93c17ef99298d773014b40c7ae13fb26ee
+
+COCOAPODS: 1.9.1
