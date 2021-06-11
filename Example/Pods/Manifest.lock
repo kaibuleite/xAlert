@@ -1,9 +1,9 @@
 PODS:
-  - xAlert (1.0.0):
+  - xAlert (1.0.1):
     - xDefine
     - xExtension
-  - xDefine (1.0.1)
-  - xExtension (1.0.1)
+  - xDefine (1.0.2)
+  - xExtension (1.0.6)
 
 DEPENDENCIES:
   - xAlert (from `../`)
@@ -18,9 +18,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  xAlert: b4267aec1ed13d19c2954fe2b3e29e682833a948
-  xDefine: c49ba60b96d8a940028dfe98d9016c93894739d9
-  xExtension: 3112075f98d10de63b99fbab7a7a800deac95793
+  xAlert: bc1b6cea9e4960df667e8ea1bbe78dfe2f320688
+  xDefine: 0df7b51c0e6edb71ca9fd667f728699d0a7a1b12
+  xExtension: d141e757ab53a7e0ab73de4cf652d43554c5f80d
 
 PODFILE CHECKSUM: 2fa27f93c17ef99298d773014b40c7ae13fb26ee
 
