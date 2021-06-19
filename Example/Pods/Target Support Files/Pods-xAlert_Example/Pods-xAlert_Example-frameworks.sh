@@ -200,11 +200,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/xAlert/xAlert.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xDefine/xDefine.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xExtension/xExtension.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/xKit/xKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/xAlert/xAlert.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xDefine/xDefine.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/xExtension/xExtension.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/xKit/xKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
