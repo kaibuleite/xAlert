@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'xAlert'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'Swift xAlert.'
   s.swift_version    = '5'      # Swift版本号
 
