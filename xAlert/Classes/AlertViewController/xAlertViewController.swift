@@ -50,7 +50,7 @@ open class xAlertViewController: UIViewController {
     /// - Parameters:
     ///   - animeType: 动画类型
     ///   - isSpring: 是否开启弹性动画
-    open func display(animeType : xAlertDisplayAnimeType = .random,
+    open func display(animeType : xAlertDisplayAnimeType = .fade,
                       isSpring : Bool = true)
     {
         // 保存数据
@@ -86,7 +86,7 @@ open class xAlertViewController: UIViewController {
     /// 隐藏选择器
     /// - Parameters:
     ///   - animeType: 动画类型
-    open func dismiss(animeType : xAlertDisplayAnimeType = .random)
+    open func dismiss(animeType : xAlertDisplayAnimeType = .fade)
     {
         switch animeType {
         case .fade:

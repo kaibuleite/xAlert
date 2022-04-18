@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'xAlert'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'Swift xAlert.'
   s.swift_version    = '5'      # Swift版本号
 
@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/kaibuleite/xAlert.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'xAlert/Classes/**/*'
   

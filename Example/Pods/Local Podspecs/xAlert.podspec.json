@@ -1,7 +1,8 @@
 {
   "name": "xAlert",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "summary": "Swift xAlert.",
+  "swift_versions": "5",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/kaibuleite/xAlert",
   "license": {
@@ -13,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/kaibuleite/xAlert.git",
-    "tag": "1.0.6"
+    "tag": "1.0.9"
   },
   "platforms": {
     "ios": "9.0"
@@ -29,5 +30,6 @@
     "xKit": [
 
     ]
-  }
+  },
+  "swift_version": "5"
 }
