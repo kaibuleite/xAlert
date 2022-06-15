@@ -83,7 +83,7 @@ public class xChooseMapNavigationActionSheet: NSObject {
         let chaset = CharacterSet.urlQueryAllowed
         guard let str = urlStr.addingPercentEncoding(withAllowedCharacters: chaset) else { return }
         guard let url = URL.init(string: str) else { return }
-        UIApplication.shared.openURL(url)
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
     /// 打开百度地图
@@ -105,7 +105,7 @@ public class xChooseMapNavigationActionSheet: NSObject {
         let chaset = CharacterSet.urlQueryAllowed
         guard let str = urlStr.addingPercentEncoding(withAllowedCharacters: chaset) else { return }
         guard let url = URL.init(string: str) else { return }
-        UIApplication.shared.openURL(url)
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
     /// 打开苹果地图
