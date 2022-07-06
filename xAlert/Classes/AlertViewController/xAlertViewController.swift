@@ -5,10 +5,10 @@
 //  Created by Mac on 2020/9/18.
 //
 
-import UIKit
+import xKit
 import xExtension
 
-open class xAlertViewController: UIViewController {
+open class xAlertViewController: xViewController {
 
     // MARK: - Enum
     /// 弹窗显示动画样式
@@ -25,28 +25,19 @@ open class xAlertViewController: UIViewController {
     /// 弹窗容器
     @IBOutlet public weak var content: UIView!
     
-    // MARK: - Open Override Func
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
-    }
-    
-    // MARK: - IBOutlet Func
-    /// 背景关闭
-    @IBAction func closeBtnClick()
-    {
-        self.dismiss()
-    }
-    
-    // MARK: - Open Func
-    /// 实例化对象
-    /// - Returns: 对象 
+    // MARK: - Override Func
     open override class func xDefaultViewController() -> Self {
         let vc = xAlertViewController()
         return vc as! Self
     }
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.isHidden = true
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+    }
     
-    /// 显示选择器
+    // MARK: - 显示弹窗
+    /// 显示弹窗
     /// - Parameters:
     ///   - animeType: 动画类型
     ///   - isSpring: 是否开启弹性动画
@@ -83,7 +74,13 @@ open class xAlertViewController: UIViewController {
         }
     }
     
-    /// 隐藏选择器
+    // MARK: - 隐藏弹窗
+    /// 背景关闭
+    @IBAction func closeBtnClick()
+    {
+        self.dismiss()
+    }
+    /// 隐藏弹窗
     /// - Parameters:
     ///   - animeType: 动画类型
     open func dismiss(animeType : xAlertDisplayAnimeType = .fade)
