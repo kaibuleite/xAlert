@@ -16,10 +16,13 @@ open class xPushAlertViewController: xViewController {
     /// 弹窗容器底部距离
     @IBOutlet public weak var contentBottomLayout: NSLayoutConstraint!
     
-    // MARK: - Open Override Func
+    // MARK: - Override Property
+    open override var typeEmoji: String { return "🎉" }
+    
+    // MARK: - Override Func
     open override class func xDefaultViewController() -> Self {
-        let vc = xPushAlertViewController()
-        return vc as! Self
+        let vc = Self.xNew(xib: nil)
+        return vc
     }
     open override func viewDidLoad() {
         super.viewDidLoad()

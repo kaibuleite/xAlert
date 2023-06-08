@@ -25,10 +25,13 @@ open class xAlertViewController: xViewController {
     /// 弹窗容器
     @IBOutlet public weak var content: UIView!
     
+    // MARK: - Override Property
+    open override var typeEmoji: String { return "🎈" }
+    
     // MARK: - Override Func
     open override class func xDefaultViewController() -> Self {
-        let vc = xAlertViewController()
-        return vc as! Self
+        let vc = Self.xNew(xib: nil)
+        return vc
     }
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,4 +119,5 @@ open class xAlertViewController: xViewController {
         let ret = arr[Int(idx)]
         return ret
     }
+    
 }
