@@ -28,6 +28,9 @@ open class xAlertViewController: xViewController {
     // MARK: - Override Property
     open override var typeEmoji: String { return "🎈" }
     
+    // MARK: - Public Property
+    public var isAutoDismiss = true
+    
     // MARK: - Override Func
     open override class func xDefaultViewController() -> Self {
         let vc = Self.xNew(xib: nil)
@@ -37,6 +40,12 @@ open class xAlertViewController: xViewController {
         super.viewDidLoad()
         self.view.isHidden = true
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+    }
+    open override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if self.isAutoDismiss {
+            self.dismiss()
+        }
     }
     
     // MARK: - 显示弹窗
